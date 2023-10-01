@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+<body class="contain">
+
+
+			<div class="cont">
+				<h1>Login Page</h1>
+				<p>Please enter your Username and Password</p>
+				<%- include('./partials/messages')   %>
+
+				<form action = "/login" method="post">
+					<p> <input type="text" name="username" placeholder="Email" /></p>
+					<p> <input type="text" name="password" placeholder="Password" /></p>
+					<button type="submit">Login</button>
+
+
+				</form>
+
+				<p>No Account?<a href="/register">Register</a></p>
+		</div>
+
+</body>
+</html>
